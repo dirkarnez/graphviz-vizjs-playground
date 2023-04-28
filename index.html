@@ -11,7 +11,7 @@
 <body>
     <div id="here"></div>
     <script>
-        var viz = new Viz({ workerURL: '../full.render.js' });
+        var viz = new Viz({ workerURL: './full.render.js' });
         // graph { a -- b; }
         viz.renderSVGElement("digraph { a -> b; }")
             .then(function (element) {
